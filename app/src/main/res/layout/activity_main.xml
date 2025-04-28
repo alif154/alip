@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/gambar">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Kalkulator Sederhana"
+        android:textColor="@android:color/black"
+
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/edt_angka1"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/purple_200"
+        android:hint="Masukkan Angka Pertama"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/edt_angka2"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:hint="Masukkan Angka Kedua"
+        android:layout_marginTop="15dp"
+        android:background="@color/purple_200"
+        android:paddingLeft="15dp"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C"
+            android:layout_marginEnd="3dp"
+            android:backgroundTint="@color/purple_200"/>
+
+        <Button
+            android:id="@+id/btn_tambah"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:layout_marginEnd="3dp"
+            android:backgroundTint="@color/purple_200"/>
+
+        <Button
+            android:id="@+id/btn_kurang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:layout_marginEnd="3dp"
+            android:backgroundTint="@color/purple_200"/>
+
+        <Button
+            android:id="@+id/btn_kali"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="×"
+            android:layout_marginEnd="3dp"
+            android:backgroundTint="@color/purple_200"/>
+
+        <Button
+            android:id="@+id/btn_bagi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:layout_marginEnd="3dp"
+            android:backgroundTint="@color/purple_200"/>
+
+        <Button
+            android:id="@+id/btn_modulus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="%"
+            android:layout_marginEnd="3dp"
+            android:backgroundTint="@color/purple_200"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Hasil"
+        android:textColor="@android:color/black"
+        android:background="@color/purple_200"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:background="@color/purple_200"
+        android:textStyle="bold" />
+
+</LinearLayout>
